@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root{
+    --darkBlue: #1A1E29;
+    --blue: #132D46;
+    --gray: #6A6E79;
+    --white: #FFFFFF;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: var(--darkBlue);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+header{
+    height: 90px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+header > img {
+    height: 90%;
+    margin-top: 7.5px;
+}
+main{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 60px);
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main > span {
+    width: 40%;
+    color: white;
+}
+span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+span > *{
+    margin: 0;
+    display: block;
+}
+div > table{
+    
+    width: 900px;
+}
+table > * {
+    color: white;
+}
+button{
+    font-size: 1.5rem;
+}
+span > p{
+    font-size: 2rem;
+    width: 500px;
+}
+span > h2 {
+    color: antiquewhite;
+    font-size: 4rem;
+}
+main > img {
+    height: 350px;
+}
+div > h1{
+    color: #FFFFFF;
+    display: block;
+}
+span > p{
+    color: white;
+}
+span > button {
+    display: inline;
+}
+span > div {
+    width: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#desc{
+    width: 300px;
+}
+#desc > button{
+    height: 50px;
+    width: 190px;
+    border-radius: 80px;
+    background-color: #406180a2;
+    color: var(--white);
+    border: 0;
+    transition: 0.3s;
+}
+#desc > button:active{
+    scale: 0.95;
+    border: 2px solid var(--gray);
+    background-color: #406180;
+}
+button{
+    height: 50px;
+    width: 190px;
+    border-radius: 80px;
+    background-color: #406180a2;
+    color: var(--white);
+    border: 0;
+    transition: 0.3s;
+}
+button:active{
+    scale: 0.95;
+    border: 2px solid var(--gray);
+    background-color: #406180;
+
+}
+#table {
+    margin-top: 20px;
+    background-color: #406180;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 4px 2px; 
+    text-align: left; 
+}
+
+th {
+    background-color: #132D46; 
+    color: #FFFFFF; 
+}
+
+td {
+    background-color: #1A1E29; 
+    color: #FFFFFF; 
+}

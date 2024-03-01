@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagme</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="headMenu">
+            <div>
+                <img id="email" src="./assets/email_1932789.png" alt="email icon">
+                <a href="mailto:tagme8887@gmail.com">tagme8887@gmail.com</a>
+            </div>
+            <div>
+                <img src="./assets/phone_3916318.png" alt="phone icon">
+                <a href="tel:+995571205005">Call Us</a>
+            </div>
+        </div>
+        <div id="icons">
+            <a href="">
+                <img src="./assets/linkedin_1377213.png" alt="linkedin Icon">
+            </a>
+            <a href="">
+                <img src="./assets/facebook_3670124.png" alt="facebook Icon">
+            </a> 
+        </div>
+    </header>
+    <main>
+        <div id="abUs">
+            <!--<img src="./assets/logo.svg" alt="logo tagme">-->
+            <div id="navi">
+                <a href="./pages/service.html">Service</a>
+                <a href="./pages/about.html">About</a>
+                <a href="./pages/team/team.html">Team</a>
+            </div>
+        </div>
+        <div id="halfMain">
+            <div id="welcome">
+                <h1>Welcome to TagMe</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores id perferendis beatae veniam, molestias, ipsum dignissimos, obcaecati nobis atque nemo quas ab doloribus. Tempora, sit. Modi aliquam digni!
+                </p>
+                <a href="./pages/buy/buyTagMe.html"><button>Buy TagMe Device</button></a>
+                <button>Download TagMe App</button>
+            </div>
+        </div>
+        <div id="boxes">
+            <div class="box" onclick="expandBox(this, '')">
+                <h1>RFID tracking system</h1>
+                <img src="./assets/rfid.svg" alt="rfid icon">
+                <p class="add"></p>
+            </div>
+            <div class="box" onclick="expandBox(this, '')">
+                <h1>User friendly App</h1>
+                <img src="./assets/Fapp.svg" alt="app icon">
+                <p class="add"></p>
+            </div>
+            <div class="box" onclick="expandBox(this, 'as')">
+                <h1>Easy to use stickers</h1>
+                <img src="./assets/notif.svg" alt="sticker icon">
+                <p class="add"></p>
+            </div>
+            <div class="box" onclick="expandBox(this, '')">
+                <h1>Reliable notifications</h1>
+                <img src="./assets/ring.svg" alt="notification icon">
+                <p class="add"></p>
+            </div>
+        </div>
+    </main>
+    <script src="./box.js"></script>
+</body>
+</html>

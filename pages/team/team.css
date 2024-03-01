@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root{
+    --darkBlue: #1A1E29;
+    --blue: #132D46;
+    --gray: #6A6E79;
+    --white: #ffffff;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--darkBlue);
+    height: 100vh; /* Changed height to 100vh for full height */
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+main{
+    width: 80%;
+}
+#team {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+span > img {
+    height: 300px;
+}
+span.member {
+    cursor: pointer; 
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+span.member.enlarged {
+    transform: scale(1.5); 
+    z-index: 1; 
+}
+span.blur {
+    filter: blur(5px); 
+}

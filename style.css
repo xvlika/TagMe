@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root{
+    --darkBlue: #1A1E29;
+    --blue: #132D46;
+    --gray: #6A6E79;
+    --white: #FFFFFF;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+
+}
+header{
+    width: 100%;
+    height: 40px;
+    background-color: var(--darkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#headMenu > div > img{
+    height: 20px;
+    margin-right: 5px;
+}
+#headMenu{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+
+}
+#headMenu > div > a{
+    margin-bottom: 5px;
+    color:white;
+}
+#icons{
+    margin-right: 20px;
+}
+#icons > a > img{
+    height: 30px;
+}
+main{
+    background-color: var(--blue);
+    height: 75%;
+    padding: 20px;
+    background-image: url('./assets/vmushaobt\(ara\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    backdrop-filter: blur(10px);
+}
+#abUs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#abUs > h1{
+    margin: 0;
+    color: var(--white);
+    display: inline;
+}
+/*#abUs > img{
+    height: 500px;
+}*/
+#abUs > h1:nth-child(2){
+    color: orange;
+}
+#navi > a{
+    color: var(--white);
+}
+#navi{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+#welcome{
+    width: 30%;
+    margin-top: 5%;
+    color: var(--white);
+}
+button{
+    height: 50px;
+    width: 190px;
+    border-radius: 80px;
+    background-color: #406180a2;
+    color: var(--white);
+    border: 0;
+    transition: 0.3s;
+}
+button:active{
+    scale: 0.95;
+    border: 2px solid var(--gray);
+    background-color: #406180;
+
+}
+#welcome > h1{
+    font-size: 4rem;
+}
+main > div > img{
+    height: 50%;
+}
+#pers{
+    height: 90%;
+    filter: opacity(0.9) blur(3px);
+    padding-top: 0px;
+}
+#halfMain{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+#boxes{
+    z-index: 1;
+    height: 200px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    padding: 0 10px 0 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    transition: 0.4s;
+}
+.box:nth-child(1){
+    background-color: var(--gray);
+    box-shadow: 2px 2px 4px var(--gray);
+
+}
+.box:nth-child(2){
+    background-color: #2e5579;
+    box-shadow: 2px 2px 4px var(#2e5579);
+
+}
+.box:nth-child(4){
+    background-color:#3d4866;
+    box-shadow: 2px 2px 4px #3d4866;
+}
+.box:nth-child(3){
+    background-color: #5570b9;
+    box-shadow: 2px 2px 4px #5570b9;
+}
+.box > h1{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.add {
+    text-align: center;
+}
+.box > img {
+    height: 50%;
+}
+.box:hover{
+    scale: 1.1;
+}
+.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    width: 50%;
+    height: 40%;
+    max-width: 600px;
+    max-height: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.expanded > h1 {
+    color: black;
+}
+
+.expanded > p {
+    color: black;
+}
+
+.expanded > img {
+    height: 64px;
+}
+
+.expanded .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
