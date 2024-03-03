@@ -31,12 +31,31 @@ header{
 #headMenu{
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 25%;
     justify-content: space-between;
 }
 #headMenu > div > a{
     margin-bottom: 5px;
     color:white;
+}
+#headMenu > div > a {
+    color: white;
+    position: relative; 
+}
+
+#headMenu > div > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0;
+    height: 2px; 
+    background-color: var(--white);
+    transition: width 0.3s ease; 
+}
+
+#headMenu > div > a:hover::after {
+    width: 100%; 
 }
 #icons{
     margin-right: 20px;
@@ -82,7 +101,6 @@ main{
     color: var(--white);
     position: relative; 
 }
-
 #navi > a::after {
     content: "";
     position: absolute;
