@@ -115,13 +115,13 @@ main > div > img{
 }
 #boxes{
     z-index: 1;
-    height: 20%;
+    height: 40%;
     display: flex;
     justify-content: space-around;
 }
 .box{
     height: 100%;
-    width: 100%;
+    width: 20%;
    /* border-radius: 50%;*/
     border-radius: 20px;
     padding: 0 10px 0 10px;
