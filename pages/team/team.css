@@ -28,8 +28,9 @@ main{
     width: 80%;
     justify-content: space-between;
 }
-span > img {
-    height: 300px;
+.member > img {
+    width: 300px;
+    border-radius: 150px;
 }
 span.member {
     cursor: pointer; 

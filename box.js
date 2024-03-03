@@ -12,6 +12,8 @@ function expandBox(box, newText) {
 
     if (!box.classList.contains('expanded')) {
         box.classList.add('expanded');
+        paragraph.style.fontSize = '1.2rem';
+        paragraph.style.color = 'white'; 
     } else {
         paragraph.textContent = ''; 
     }
