@@ -78,6 +78,26 @@ main{
     width: 200px;
     justify-content: space-between;
 }
+#navi > a {
+    color: var(--white);
+    position: relative; 
+}
+
+#navi > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0;
+    height: 2px; 
+    background-color: var(--white);
+    transition: width 0.3s ease; 
+}
+
+#navi > a:hover::after {
+    width: 100%;
+}
+
 #welcome{
     width: 30%;
     margin-top: 5%;
