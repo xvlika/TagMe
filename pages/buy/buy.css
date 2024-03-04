@@ -13,9 +13,6 @@ body{
     background-color: var(--darkBlue);
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 header{
     height: 90px;
