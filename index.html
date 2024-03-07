@@ -6,6 +6,15 @@
     <title>Tagme</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function changeLanguage(language) {
+            if (language === 'georgian') {
+                window.location.href = 'index-georgian.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -21,12 +30,13 @@
             <a href="./pages/service/service.html">Service</a>
             <a href="./pages/team/team.html">Team</a>
         </div>
-        
+        <div id="language-selector">
+            <button onclick="changeLanguage('english')">English</button>
+            <button onclick="changeLanguage('georgian')">Georgian</button>
+        </div>
     </header>
     <main>
-        <div id="abUs">
-
-        </div>
+        <div id="abUs"></div>
         <div id="halfMain">
             <div id="welcome">
                 <h1>Welcome to TagMe</h1>
@@ -57,6 +67,7 @@
             </div>
         </div>
     </main>
+    
     <script src="./box.js"></script>
 </body>
 </html>

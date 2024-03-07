@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagme</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function changeLanguage(language) {
+            if (language === 'georgian') {
+                window.location.href = 'index-georgian.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="headMenu">
+            <div>
+                <a href="mailto:tagme8887@gmail.com">tagme8887@gmail.com</a>
+            </div>
+            <div>
+                <a href="tel:+995571205005">დაგვირეკეთ</a>
+            </div>
+        </div>
+        <div id="navi">
+            <a href="./pages/service/service.html">სერვიისი</a>
+            <a href="./pages/team/team.html">ჯგუფი</a>
+        </div>
+        <div id="language-selector">
+            <button onclick="changeLanguage('english')">ინგლისური</button>
+            <button onclick="changeLanguage('georgian')">ქართული</button>
+        </div>
+    </header>
+    <main>
+        <div id="abUs"></div>
+        <div id="halfMain">
+            <div id="welcome">
+                <h1>Welcome to TagMe</h1>
+                <a href="./pages/buy/buyTagMe.html"><button>იყიდე TagMe</button></a>
+                <button>გადმოწერე TagMe აპლიკაცია</button>
+            </div>
+        </div>
+        <div id="boxes">
+            <div class="box" onclick="expandBox(this, 'ჩვენი პროდუქტი შედგება რამდენიმე კომპონენტისგან, ერთ-ერთი მათგანია RFID წამკითხველი, რომელიც იჭერს რადიოსიგნალებს სტიკერებიდან და გადასცემს მათ აპლიკაციაში')">
+                <h1>RFID თრექინგ სისტემა</h1>
+                <img src="./assets/rfid.svg" alt="rfid icon">
+                <p class="add"></p>
+            </div>
+            <div class="box" onclick="expandBox(this, 'TagMe კომპლექსის ყიდვისას მნიშვნელოვანია ჩამოტვირთოთ ჩვენი აპლიკაცია. ჩვენი მარტივი აპლიკაციით, თქვენ შეგიძლიათ შეუფერხებლად აკონტროლოთ სტიკერები და ნივთები(სტიკერით). შეადგინეთ თქვენი ყოველდღიური სია და გვერწმუნეთ, რომ არაფერი დაგავიწყდეთ!')">
+                <h1>მოსახერხებელი აპლიკაცია</h1>
+                <img src="./assets/Fapp.svg" alt="app icon">
+                <p class="add"></p>
+            </div>
+            <div class="box" onclick="expandBox(this, 'we incorporate RFID stickers in our device. The stickers can adhere to almost any surface, and the radio signals are transmitted without any problem, so feel free to slap them on anything important to you.')">
+                <h1>მარტივად გამოსაყენებელი აპლიკაცია</h1>
+                <img src="./assets/notif.svg" alt="sticker icon">
+                <p class="add"></p>
+            </div>
+            <div class="box" onclick="expandBox(this, 'the notifications will make sure you don’t forget anything at home, if you do, the reader will send the signal to our app and, we will kindly remind you to recheck your bag.')">
+                <h1>ზუსტი შეტყობინებები</h1>
+                <img src="./assets/ring.svg" alt="notification icon">
+                <p class="add"></p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="./box.js"></script>
+</body>
+</html>

@@ -31,8 +31,8 @@ header{
 #headMenu{
     display: flex;
     align-items: center;
-    width: 25%;
-    justify-content: space-between;
+    width: 20%;
+    justify-content: space-evenly;
 }
 #headMenu > div > a{
     margin-bottom: 5px;
@@ -96,7 +96,7 @@ main{
 #navi{
     display: flex;
     width: 200px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 #navi > a {
     color: var(--white);
@@ -239,4 +239,7 @@ main > div > img{
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+#language-selector > button{
+    height: 30px;
 }
