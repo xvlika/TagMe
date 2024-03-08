@@ -202,7 +202,7 @@ main > div > img{
 .box > img {
     height: 50%;
 }
-.box:hover{
+.box:not(.expanded):hover{
     scale: 1.1;
 }
 .expanded {
