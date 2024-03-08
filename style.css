@@ -243,3 +243,15 @@ main > div > img{
 #language-selector > button{
     height: 30px;
 }
+@media screen and (max-width: 1330px) {
+    #butts {
+        display: flex;
+        width: 100%;
+    }
+    #welcome > h1 {
+        margin-bottom: 0px;
+    }
+    button{
+        width: 190px;
+    }
+}
