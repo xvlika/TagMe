@@ -2,7 +2,6 @@ function expandBox(box, newText) {
     let paragraph = box.querySelector('p');
 
     if (!box.classList.contains('expanded')) {
-        // Expand the box
         box.classList.add('expanded');
         paragraph.textContent = newText;
         paragraph.style.fontSize = '1.2rem';

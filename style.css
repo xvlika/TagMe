@@ -254,8 +254,11 @@ main > div > img{
     button{
         width: 190px;
     }
-    #headmenu{
-        width: 25%;
+    #headMenu{
+        width: 35%;
+    }
+    #language-selector > button {
+        width: 110px;
     }
 }
 @media  screen and (max-height: 650px) {
