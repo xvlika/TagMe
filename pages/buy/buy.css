@@ -154,7 +154,7 @@ td {
         margin-top: 10%;
     }
 }
-@media screen and (max-height:1200px) {
+@media screen and (max-height:620px) {
     body{
         height: 100vh;
     }
