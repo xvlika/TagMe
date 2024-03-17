@@ -6,6 +6,17 @@
     <title>Tagme</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width: 450px){
+
+        .box > h1{
+            font-size: 0.7rem;
+        }
+        #headMenu > div > a{
+        font-size: 7px;
+        }
+        }
+    </style>
     <script>
         function changeLanguage(language) {
             if (language === 'georgian') {
@@ -31,8 +42,8 @@
             <a href="./pages/team/teamq.html">გუნდი</a>
         </div>
         <div id="language-selector">
-            <button onclick="changeLanguage('english')">ინგლისური</button>
-            <button onclick="changeLanguage('georgian')">ქართული</button>
+            <button onclick="changeLanguage('english')"><p>ინგლისური</p></button>
+            <button onclick="changeLanguage('georgian')"><p>ქართული</p></button>
         </div>
     </header>
     <main>
