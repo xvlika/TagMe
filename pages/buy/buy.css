@@ -6,6 +6,17 @@
     --white: #FFFFFF;
 }
 body{
+    display: flex;
+    background-color: var(--darkBlue);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    color: var(--white);
+}
+/*body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -168,3 +179,11 @@ td {
         margin-top: 90px;
     }
 }
+@media  screen and (max-width:710px) {
+    main > img {
+        height: 50%;
+    }
+    span > h2 { 
+        font-size: 1rem;
+    }
+}*/
