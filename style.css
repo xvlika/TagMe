@@ -283,12 +283,26 @@ main > div > img{
     }
 }
 @media screen and (max-width: 450px){
+    #butts{
+        justify-content: space-around;
+    }
 
-    #halfMain{
+    #halfMain , #welcome{
         width: 100%;
-        justify-content: flex-start;
+        height: 30%;
+        display: block;
     }
     button{
         width: 110px;
+    }
+    #welcome, #welcome > h1{
+        margin-top: 0px;
+    }
+    #boxes{
+        flex-wrap: wrap;
+    }
+    .box{
+        margin: 7px;
+        width: 40%;
     }
 }
