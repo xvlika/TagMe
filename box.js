@@ -9,7 +9,7 @@ function expandBox(box, newText) {
         
         if (paragraph.textContent.trim() !== '') {
             if (window.innerWidth <= 450) {
-                box.style.width = '90%';
+                box.style.width = '70%';
                 box.style.height = '50%';
             }
         }
