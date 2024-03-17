@@ -6,9 +6,18 @@ function expandBox(box, newText) {
         paragraph.textContent = newText;
         paragraph.style.fontSize = '1.2rem';
         paragraph.style.color = 'white'; 
+        
+        if (paragraph.textContent.trim() !== '') {
+            if (window.innerWidth <= 450) {
+                box.style.width = '90%';
+                box.style.height = '50%';
+            }
+        }
     } else {
         box.classList.remove('expanded');
         paragraph.textContent = ''; 
+        box.style.width = ''; 
+        box.style.height = ''; 
     }
 
     box.addEventListener('click', function(event) {
@@ -20,6 +29,8 @@ function expandBox(box, newText) {
         if (boxElement !== box) {
             boxElement.classList.remove('expanded');
             boxElement.querySelector('p').textContent = ''; 
+            boxElement.style.width = ''; 
+            boxElement.style.height = ''; 
         }
     });
 }
@@ -29,5 +40,7 @@ document.addEventListener('click', function(event) {
     boxes.forEach(function(boxElement) {
         boxElement.classList.remove('expanded');
         boxElement.querySelector('p').textContent = ''; 
+        boxElement.style.width = '';
+        boxElement.style.height = ''; 
     });
 });
