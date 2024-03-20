@@ -360,7 +360,12 @@ main > div > img{
         justify-content: flex-start;
     }
 }
-
+@media screen and (max-width: 735px) {
+    #boxes{
+        display: flex;
+        flex-direction: row;
+    }
+}
 @media screen and (max-width: 576px) {
     #butts {
         justify-content: space-around;
@@ -385,10 +390,6 @@ main > div > img{
     #welcome > h1 {
         font-size: 2rem;
         text-align: center;
-    }
-
-    #boxes {
-        flex-wrap: wrap;
     }
 
     .box {
