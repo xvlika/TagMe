@@ -69,18 +69,16 @@
         </div>
         
     </div>
-
     <script>
-        function toggleShowMoreLess() {
-            var button = document.getElementById("show");
-            if (button.textContent === "Show More") {
-                button.textContent = "Show Less";
-                // Scroll down to the boxes
-                document.getElementById("boxes").scrollIntoView({ behavior: 'smooth' });
+        window.addEventListener('resize', function() {
+            if (window.innerWidth < 576) {
+                document.getElementById('halfMain').style.display = 'flex';
+                document.getElementById('halfMain').style.justifyContent = 'center';
             } else {
-                button.textContent = "Show More";
+                document.getElementById('halfMain').style.display = 'block';
             }
-        }
+        });
     </script>
+    <script src="./show.js">//code for scroll</script>
 </body>
 </html>
