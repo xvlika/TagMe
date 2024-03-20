@@ -39,9 +39,7 @@
             </div>
         </div>
         <div id="mo">
-            <button id="show">
-                show more
-            </button>
+            <button id="show" onclick="toggleShowMoreLess()">Show More</button>
         </div>
     </main>
     <div id="boxes">
@@ -71,5 +69,18 @@
         </div>
         
     </div>
+
+    <script>
+        function toggleShowMoreLess() {
+            var button = document.getElementById("show");
+            if (button.textContent === "Show More") {
+                button.textContent = "Show Less";
+                // Scroll down to the boxes
+                document.getElementById("boxes").scrollIntoView({ behavior: 'smooth' });
+            } else {
+                button.textContent = "Show More";
+            }
+        }
+    </script>
 </body>
 </html>

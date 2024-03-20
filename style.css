@@ -12,7 +12,7 @@ body{
     height: 100vh;
     font-family: 'Inter', sans-serif;
     width: 100vw;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 a{
     text-decoration: none;
@@ -168,7 +168,6 @@ main > div > img{
 .box{
     height: 100%;
     width: 25%;
-    padding: 0 10px 0 10px;
     color: white;
     opacity: 0.9;
     display: flex;
@@ -197,13 +196,17 @@ main > div > img{
 .add {
     text-align: center;
 }
-.box > img {
-    height: 50%;
+.boxImg {
+    height: 30%;
 }
 .expanded {
     width: 100% !important;
 }
-
+#mo > img {
+    height: 64px;
+    opacity: 0.7;
+    cursor: pointer;
+}
 .expanded .expanded-content {
     display: block;
     width: 50%;
@@ -226,7 +229,9 @@ main > div > img{
 .expanded-header {
     justify-content: flex-start;
 }
-
+#mo > button {
+    opacity: 0;
+}
 .expanded-header #headMenu {
     margin-left: 20px; 
 }
@@ -240,10 +245,8 @@ main > div > img{
     display: flex;
     flex-direction: column;
 }
-.box > div > img {
-    height: 50%;
-}
 .box > div > h1 {
+    font-size: 1.5rem;
     text-align: center;
 }
 ::-webkit-scrollbar {
@@ -307,6 +310,9 @@ main > div > img{
     }
     #language-selector > button {
         width: 110px;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
 @media  screen and (max-height: 650px) {
