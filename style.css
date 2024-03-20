@@ -342,6 +342,7 @@ main > div > img{
     main {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         padding: 20px 0px;
     }
 
@@ -362,8 +363,14 @@ main > div > img{
 }
 @media screen and (max-width: 735px) {
     #boxes{
-        display: flex;
-        flex-direction: row;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
 @media screen and (max-width: 576px) {
@@ -390,11 +397,6 @@ main > div > img{
     #welcome > h1 {
         font-size: 2rem;
         text-align: center;
-    }
-
-    .box {
-        margin: 7px;
-        width: 25%;
     }
 
     .box > img {
