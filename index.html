@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="./box.js"></script>
     <script src="./appear.js"></script>
+    <script src="./lang.js">//to change language</script>
 </head>
 <body>
     <header>
@@ -24,8 +25,7 @@
             <a href="./pages/team/team.html">Team</a>
         </div>
         <div id="language-selector">
-            <button onclick="changeLanguage('english')"><p>English</p></button>
-            <button onclick="changeLanguage('georgian')"><p>Georgian</p></button>
+            <button id="languageToggle" onclick="toggleLanguage()"><p>Georgian</p></button>
         </div>
     </header>
     <main>
@@ -46,7 +46,7 @@
         <div class="box" onclick="expandBox(this, 'RIFD tracking system: Our product consists of a few components, one of those is an RFID reader, which catches the radio signals from the stickers and transmits them to the app.')">
             <div>
             <h1>RFID tracking system</h1>
-            <img class="boxImg" src="./assets/rfid.svg" alt="rfid icon">
+            <img class="" src="./assets/rfid.svg" alt="rfid icon">
         </div>
         </div>
         <div class="box" onclick="expandBox(this, 'User friendly app: when buying the TagMe complect, it is important to download our application. With our simple app, you can seamlessly control the stickers, and the items they are attached to. Make your daily list, and we will make sure you don’t forget anything!')">
